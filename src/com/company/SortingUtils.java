@@ -2,19 +2,13 @@ package com.company;
 
 public class SortingUtils
 {
-    public static int[] copyIntArray(int[] arr)
+    public static int[] randIntArray(int count)
     {
-        int[] temp = new int[arr.length];
-        for (int i = 0; i < arr.length; i++)
+        int arr[] = new int[count];
+        for(int i = 0; i < count; i++)
         {
-            temp[i] = arr[i];
+            arr[i] = (int)(Math.random()*count+1);
         }
-        return temp;
-    }
-    public static int[] copyDoubleArray(int[] arr)
-    {
-    }
-    public static int[] copyStringArray(int[] arr)
-    {
+        return arr;
     }
 }
